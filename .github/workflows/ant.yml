@@ -22,6 +22,4 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
     - name: Build with Ant
-      run: |
-       javac ../Sourc-Code-Inspection-master V1.1/Source-Code-Inspection-master/Source Code Inspection/src/br/calebe/ticketmachine/core/Troco.java
-       java -cp ../Sourc-Code-Inspection-master V1.1/Source-Code-Inspection-master/Source Code Inspection/src/br/calebe/ticketmachine/core Troco
+      run: ant -buildfile "Source-Code-Inspection-master V1.1/Source-Code-Inspection-master/Source Code Inspection/build.xml"
